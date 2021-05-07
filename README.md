@@ -1,0 +1,1 @@
+Este repositorio tem como principal intuito ser utilizado para fins academicos do curso da Trybe. Conforme eu for desenvolvendo meus projetos, eles serão compartilhados nesta pasta. A Trybe é uma escola especializada na área de desenvolvimento web, focada em formar programadores que saibam como aprender e trabalhar.
