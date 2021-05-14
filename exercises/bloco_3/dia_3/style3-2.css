@@ -1,0 +1,27 @@
+div:hover {
+    border: 2px solid black;
+}
+.um {
+color: lawngreen;
+font-weight: bold;
+font-style: italic;
+}
+.dois {
+color: lightsalmon;
+text-align: center;
+}
+.tres {
+color: magenta;
+text-decoration: underline;
+font-size: 2em;
+font-style: italic;
+}
+.quatro {
+color: mediumpurple;
+background-color: orangered;
+}
+.cinco {
+color: navy;
+line-height: 180px;
+font-style: italic;
+}
