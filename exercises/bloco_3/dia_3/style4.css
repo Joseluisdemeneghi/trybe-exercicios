@@ -1,10 +1,10 @@
 ol {
     background-color: yellow;
 }
-ol li.par {
+ol li:nth-child(even) {
     color: green;
 }
-ol li.primo {
+ol li:nth-child(3n+2), ol li:nth-child(3){
     text-transform: uppercase;
 }
 h1, h3 {
@@ -20,29 +20,26 @@ li {
 li em {
     font-weight: bold;
 }
-.tres {
+div li:nth-of-type(-n+3) {
     color: blue;
 }
-.java {
+div li:nth-child(n+2):nth-child(-n+3){
     background-color: pink;
 }
 li a:hover {
     font-weight: 900;
 }
-#stack:hover {
+li:hover:nth-child(1) a {
     color: orangered;
 }
-#w3:hover {
+li:nth-child(3n+2):hover a {
     color: green;
 }
-#mdn:hover {
+li:nth-child(3):hover a {
     color: black;
 }
-#dev:hover {
+li:nth-child(4):hover a {
     color: yellow;
-}
-#trybe:hover {
-    color: green;
 }
 /*
 
