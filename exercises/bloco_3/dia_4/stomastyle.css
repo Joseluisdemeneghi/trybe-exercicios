@@ -1,6 +1,7 @@
 .header {
     text-align: center;
-    color: chartreuse;
+    text-decoration: underline;
+    color: black;
 }
 .nav {
     text-align: center;
@@ -9,6 +10,7 @@
 .links {
     padding: 10px 70px;
     text-decoration: none;
+    color: whitesmoke;
 }
 .links:hover {
     color: black;
@@ -18,7 +20,8 @@ h2 {
     padding-left: 105px;
 }
 h3 {
-    padding-left: 150px;
+    padding-left: 130px;
+    padding-top: 15px;
 }
 .texto {
     display: inline-block;
@@ -30,5 +33,30 @@ h3 {
     padding-right: 25%;
 }
 .aside {
-    padding: 50px 100px;
+    padding: 30px 100px;
+}
+h4 {
+    padding-left: 125px;
+    padding-top: 25px;
+}
+div a {
+    padding-left: 100px;
+    color: whitesmoke;
+}
+footer {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: 900;
+}
+body {
+    background-color: cornflowerblue;
+}
+li a {
+    text-decoration: none;
+    line-height: 35px;
+    color: whitesmoke;
+}
+li:hover a {
+    color: crimson;
+    font-weight: 600;
 }
