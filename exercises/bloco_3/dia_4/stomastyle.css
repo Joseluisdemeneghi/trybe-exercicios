@@ -10,7 +10,7 @@
 .links {
     padding: 10px 70px;
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
 .links:hover {
     color: black;
@@ -41,7 +41,7 @@ h4 {
 }
 div a {
     padding-left: 100px;
-    color: whitesmoke;
+    color: white;
 }
 footer {
     padding-top: 15px;
@@ -49,14 +49,17 @@ footer {
     font-weight: 900;
 }
 body {
-    background-color: cornflowerblue;
+    background-color: rgb(102, 102, 153);
 }
 li a {
     text-decoration: none;
     line-height: 35px;
-    color: whitesmoke;
+    color: white;
 }
 li:hover a {
     color: crimson;
     font-weight: 600;
+}
+ul {
+    color: white;
 }
