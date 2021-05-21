@@ -1,8 +1,8 @@
-let n = 5;
+let base = 5;
 let aster = '*';
 let desenho = '';
 
-for (let index = 0; index <= n; index += 1) {
+for (let index = 0; index <= base; index += 1) {
   console.log (desenho)
   desenho = desenho + aster;
 };

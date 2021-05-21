@@ -1,11 +1,11 @@
-let n = 5;
+let base = 5;
 let aster = '*';
 let linha = '';
-let espaco = n;
+let coluna = base;
 
-for (let index = 0; index < n; index += 1) {
-  for (let indexHor = 0; indexHor <= n; indexHor += 1) {
-    if (indexHor < espaco) {
+for (let index = 0; index < base; index += 1) {
+  for (let indexColuna = 0; indexColuna <= base; indexColuna += 1) {
+    if (indexColuna < coluna) {
       linha = linha + ' ';
     } else {
       linha = linha + aster;
@@ -13,5 +13,5 @@ for (let index = 0; index < n; index += 1) {
   }
   console.log (linha);
   linha = '';
-  espaco -= 1;
+  coluna -= 1;
 }
