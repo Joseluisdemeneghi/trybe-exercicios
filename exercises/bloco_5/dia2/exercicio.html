@@ -72,6 +72,34 @@
       const paragraph = document.createElement('p');
       paragraph.innerText = 'Algum texto filho da div anterior.';
       divCenter.appendChild(paragraph);
+
+      const divLeft = document.createElement('div');
+      divLeft.className = 'left-content';
+      divMain.appendChild(divLeft);
+
+      const divRight = document.createElement('div');
+      divRight.className = 'right-content';
+      divMain.appendChild(divRight);
+
+      const image = document.createElement('img');
+      image.src = 'https://picsum.photos/200';
+      image.className = 'small-image';
+      divLeft.appendChild(image);
+
+      const list = document.createElement('ul');
+      divRight.appendChild(list);
+      const numbersList = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito','nove', 'dez'];
+      for (let key in numbersList) {
+        const listaLi = document.createElement('li');
+        listaLi.innerText = numbersList[key];
+        list.appendChild(listaLi);
+      }
+
+      for (let index = 1; index <= 3; index += 1) {
+        const tagH3 = document.createElement('h3');
+        tagH3.innerText = 'aqui esta o ' + index;
+        divMain.appendChild(tagH3);
+      }
     </script>
   </body>
 </html>
