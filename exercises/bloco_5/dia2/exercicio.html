@@ -100,6 +100,25 @@
         tagH3.innerText = 'aqui esta o ' + index;
         divMain.appendChild(tagH3);
       }
+
+      title.className = 'title';
+
+      const elementosH3 = document.getElementsByTagName('h3');
+      for (index2 = 0; index2 < 3; index2 += 1) {
+        elementosH3[index2].className = 'description';
+      }
+
+      const leftCont = document.getElementsByClassName('left-content')[0];
+      divMain.removeChild(leftCont);
+
+      const rightCont = document.getElementsByClassName('right-content')[0];
+      rightCont.style.marginRight = 'auto';
+
+      const paiDiv = document.getElementsByClassName('center-content')[0];
+      paiDiv.parentNode.style.backgroundColor = 'green';
+
+      list.lastChild.remove();
+      list.lastChild.remove();
     </script>
   </body>
 </html>
