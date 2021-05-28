@@ -133,3 +133,29 @@ function newTask(task) {
 };
 
 newTask('dormir');
+
+function subtitle(cor) {
+  let subFather = document.querySelector('.my-tasks');
+  let legenda = document.createElement('div');
+
+  legenda.className = 'task';
+  legenda.style.backgroundColor = cor;
+  subFather.appendChild(legenda);
+};
+
+subtitle('green');
+
+function Select() {
+  let taskSel = document.getElementsByClassName('task selected');
+  let myTask = document.querySelector('.task');
+
+  myTask.addEventListener('click', function(event) {
+    if (taskSel.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+};
+
+Select();
