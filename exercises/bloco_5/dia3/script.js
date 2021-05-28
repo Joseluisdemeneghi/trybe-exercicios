@@ -106,3 +106,30 @@ function showFriday() {
 
 showFriday();
 
+function zoomIn() {
+  let dayZoom = document.querySelector('#days');
+
+  dayZoom.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '35px';
+  })
+};
+
+function zoomOut() {
+  let dayZoomOut = document.querySelector('#days');
+  dayZoomOut.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+  }) 
+};
+
+zoomIn();
+zoomOut();
+
+function newTask(task) {
+  let divFather = document.querySelector('.my-tasks');
+  let taskName = document.createElement('span');
+
+  taskName.innerHTML = task;
+  divFather.appendChild(taskName);
+};
+
+newTask('dormir');
