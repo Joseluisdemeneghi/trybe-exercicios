@@ -159,3 +159,22 @@ function Select() {
 };
 
 Select();
+
+function addColor() {
+  let taskSelected = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let divTask = document.querySelector('.task');
+  let colorTask = divTask.style.backgroundColor;
+
+  days.addEventListener('click', function(event) {
+    let eventColor = event.target.style.color;
+    if (taskSelected.length > 0 && eventColor !== colorTask) {
+      let color = taskSelected[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventColor === taskColor && taskSelected.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
+
+addColor();
