@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Formulário de cadastro de currículo</title>
+</head>
+<body>
+  <form action="" method="GET">
+    <fieldset id="dadospessoais">
+      <label for="name">Nome:</label>
+        <input type="text" name="Texto" maxlength="40" id="name" required>
+      <br>
+      <label for="email">E-mail:</label>
+        <input type="email" name="email" maxlength="50" id="email" required>
+        <br>
+        <label for="cpf">Número do CPF:</label>
+        <input type="text" name="cpf" maxlength="11" id="cpf" required>
+        <br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" maxlength="200" id="endereco" required>
+        <br>
+        <label for="cidade">/Cidade:</label>
+        <input type="text" name="cidade" maxlength="28" id="cidade" required>
+        <br>
+        <label for="estado">Estado:</label>
+        <select name="" id="estado"></select>
+        <br>
+        <label for="tipomoradia">Tipo de moradia:</label>
+        <input type="radio" name="tipomoradia" id="casa" value="casa" required>Casa
+        <input type="radio" name="tipomoradia" id="apto" value="apto" required>Apartamento
+    </fieldset>
+    <fieldset id="dadosemprego">
+      <label for="resumo">Resumo do currículo:</label> <br>
+      <textarea name="resumocurriculo" id="resumo" cols="50" rows="20" maxlength="1000" required></textarea>
+      <br>
+      <label for="cargo">Cargo:</label>
+      <input type="text" name="cargo" maxlength="40" id="cargo" required>
+      <br>
+      <label for="descricao">Descrição do cargo:</label>
+      <input type="text" name="descricao" maxlength="500" id="descricao" required>
+      <br>
+      <label for="datainicio">Data de inicio:</label>
+      <input type="text" name="datainicio" id="inicio" required>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
