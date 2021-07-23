@@ -11,9 +11,10 @@ class Pokedex extends Component {
   }
 
   changePokemon() {
-    this.setState(({ pokemonIndex }) => ({
-      pokemonIndex: pokemonIndex + 1,
-    }));
+    this.setState(({ pokemonIndex }) => {
+      if (pokemonIndex === 8) return { pokemonIndex: 0 };
+      return { pokemonIndex: pokemonIndex + 1 };
+    });
   }
 
   render() {
@@ -24,7 +25,7 @@ class Pokedex extends Component {
       <div className='pokedex'>
         <button 
         onClick={this.changePokemon}
-        disabled={ this.state.pokemonIndex === 8 }
+        // disabled={ this.state.pokemonIndex === 8 }
         >Próximo</button>
         <Pokemon key={ pokemon.id } pokemon={ pokemon } />
       </div>
